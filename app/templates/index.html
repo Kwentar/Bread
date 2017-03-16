@@ -3,11 +3,13 @@
 <h1>Привет, {{user.nickname}}!</h1>
 {% for post in posts %}
 <p>
-  {{post.author.nickname}}:<br/>
-  {% for line in post.body.split('\n') %}
-      <p>{{line}}</p>
-  {% endfor %}
-  <br/>
+    {{post.author.nickname}}:<br/>
+    <div class="pirozhok">
+        {% for line in post.body.split('\n') %}
+            <p class="line_in_pirozhok">{{line}}</p>
+        {% endfor %}
+    </div>
+    <br/>
 </p>
 {% endfor %}
 {% endblock %}
