@@ -1,3 +1,29 @@
-.pirozhok {
-    color: darkgreen;
+html, body {
+	height: 100%;
+	width: 100%;
 }
+
+body {
+	align-items: center;
+  background-color: #FFF;
+	display: flex;
+	font-family: 'Raleway', sans-serif;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+}
+
+
+
+
+.pirozhok {
+    color: blue;
+    background-color: papayawhip;
+    }
+
+.h1 {
+    position: absolute; top: 10px;
+    line-height: 50px;
+    background-color: palevioletred;
+}
+
