@@ -2,28 +2,37 @@ html, body {
 	height: 100%;
 	width: 100%;
 }
-
-body {
-	align-items: center;
-  background-color: #FFF;
-	display: flex;
-	font-family: 'Raleway', sans-serif;
-	flex-direction: column;
-	justify-content: center;
-	overflow: hidden;
+body{
+    display: inline-block;
 }
-
-
-
-
 .pirozhok {
-    color: blue;
-    background-color: papayawhip;
+    color: black;
+    display: inline-block;
+    background-color: #A1A1A1;
+    padding: 10px;
     }
+
+.line_in_pirozhok {
+    padding: 0px;
+    margin: 4px;
+}
 
 .h1 {
     position: absolute; top: 10px;
     line-height: 50px;
-    background-color: palevioletred;
 }
 
+.side {
+    width: 25%;
+    height: inherit;
+    background-color: #A1A1A1;
+    float: left;
+}
+.middle {
+    width: 50%;
+    float: left;
+    height: inherit;
+    background-color: #dddddd;
+
+    text-align: center;
+}
