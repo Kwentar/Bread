@@ -6,33 +6,42 @@ body{
     display: inline-block;
 }
 .pirozhok {
-    color: black;
-    display: inline-block;
-    background-color: #A1A1A1;
+    color: #b2b2b2;
     padding: 10px;
-    }
+}
 
 .line_in_pirozhok {
     padding: 0px;
     margin: 4px;
 }
 
-.h1 {
-    position: absolute; top: 10px;
-    line-height: 50px;
+.author {
+    color: #383832;
+    text-align: left;
+    background-color: #b2b2b2;
+    padding: 10px;
 }
-
 .side {
     width: 25%;
     height: inherit;
-    background-color: #A1A1A1;
+    background-color: #212121;
     float: left;
 }
 .middle {
     width: 50%;
     float: left;
     height: inherit;
-    background-color: #dddddd;
-
+    background-color: #212121;
     text-align: center;
+}
+
+.block {
+    display: block;
+    width: 35%;
+    background-color: #383832;
+    margin: 3% auto auto auto;
+    -webkit-box-shadow: 8px 8px 0px -5px rgba(166,255,0,1);
+    -moz-box-shadow: 8px 8px 0px -5px rgba(166,255,0,1);
+    box-shadow: 8px 8px 0px -5px rgba(166,255,0,1);
+    alignment: center;
 }

@@ -1,17 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>Привет, {{user.nickname}}!</h1>
-{% for post in posts %}
-    <p>
-        {{post.author.nickname}}:<br/>
-    </p>
 
-    <div class="pirozhok">
-        {% for line in post.body.split('\n') %}
-            <p class="line_in_pirozhok">{{line}}</p>
-        {% endfor %}
+{% for post in posts %}
+    <div class="block">
+        <div class="author">
+            {{post.author.nickname}}:<br/>
+
+        </div>
+
+        <div class="pirozhok">
+            {% for line in post.body.split('\n') %}
+                <p class="line_in_pirozhok">{{line}}</p>
+            {% endfor %}
+        </div>
+        <br/>
     </div>
-    <br/>
 {% endfor %}
 {% endblock %}
